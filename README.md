@@ -65,13 +65,13 @@ If you want to run my project and see the end result for yourself, please do so.
 
 ## The Steps
 
-1. Clone the project
+**1. Clone the project**
 
 ```sh
 $ git clone https://github.com/Mimaaa/backend-package-assignment.git
 ```
 
-2. Install a Google Chrome plugin
+**2. Install a Google Chrome plugin**
 
 Because of the fact that I'm making a request to the API through the client, the server on which the images are stored is not allowing me access. 
 
@@ -85,15 +85,15 @@ There are two ways to solve this problem:
 
 I chose to do the first one, as it's taking me only 1 second to solve the problem. That doesn't mean it's the right way to solve it.
 
-3. Run the server
+**3. Run the server**
 
 ```sh
 $ npm start
 ```
 
-Note: you will be requested your password to install live-server globally in order to run the project.
+Note: you will be requested to type your password to install live-server globally in order to run the project.
 
-4. View the project
+**4. View the project**
 
 Open Google Chrome and visit `http://localhost:8080/`
 
