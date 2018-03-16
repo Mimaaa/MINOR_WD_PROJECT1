@@ -8,17 +8,17 @@ A VR experience through history: how tourist destinations changed.
 
 # Public Library of Amsterdam (OBA)
 
-Our one-week project for the OBA required us to build a web app that included the use of the AdamLink API ([read more about AdamLink (Dutch)](http://blogadamlink.nl/het-project/)). The API consists of collections from several institutions where the data is structured by using the [Linked Open Data Method](https://en.wikipedia.org/wiki/Linked_data) which is available in the [RDF format](https://en.wikipedia.org/wiki/Resource_Description_Framework). Data is requested with the use of [SPARQL](https://en.wikipedia.org/wiki/SPARQL) queries.
+Our one-week project for the OBA required us to build a web app that included the use of the AdamLink API ([read more about AdamLink](http://blogadamlink.nl/het-project/)). The API consists of collections from several institutions where the data is structured by using the [Linked Open Data Method](https://en.wikipedia.org/wiki/Linked_data) which is available in the [RDF format](https://en.wikipedia.org/wiki/Resource_Description_Framework). Data is requested with the use of [SPARQL](https://en.wikipedia.org/wiki/SPARQL) queries.
 
 # A-Frame
 
-When thinking about what I wanted to make I was inspired by our teacher Joost Faber that hinted about virtual reality. I immediatly thought about the [A-Frame](https://aframe.io/) project which I came accross last year, on [CSS Day](https://cssday.nl/), where [Ada Rose Cannon](https://twitter.com/lady_ada_king) showed us a demo she made.
+When thinking about what I wanted to make I was inspired by our teacher Joost Faber who hinted about virtual reality. I immediatly thought about the [A-Frame](https://aframe.io/) project which I came accross last year, on [CSS Day](https://cssday.nl/), where [Ada Rose Cannon](https://twitter.com/lady_ada_king) showed us a demo she made.
 
-A-Frame makes it possible to construct VR worlds which are viewable in the browser (even on mobile) and can be build in a much simpler manner than thought before.
+The A-Frame framework makes it possible to construct VR worlds which are viewable in the browser (even on mobile) and can be build in a much simpler manner.
 
 # Concept
 
-I already knew that this week was more about the concept you were going to present instead of writing complex code. The idea needs to be something people will and can use. It needs to inspire the people from the institutions to imagine building apps that make use of their collected and linked data, to serve a bigger purpose than just being data.
+I already knew that this project is more about the concept you were going to present instead of writing complex code. The idea needs to be something people will and can use. It needs to inspire the people from the institutions to imagine building apps that make use of their collected and linked data, to serve a bigger purpose than just being data.
 
 ## My Idea
 
@@ -26,13 +26,13 @@ I wanted to highlight six popular tourist destinations. Each destination would g
 
 ## A Realisation
 
-Unfortunately it was more difficult to construct the multiple worlds than initially thought . I used the [360° Image Gallery](https://aframe.io/examples/showcase/360-image-gallery/) as a starting point because it gave me the option to switch between views. However, it was limited in its customising abilities for each view.
+Unfortunately it was more difficult to construct the multiple worlds than initially thought . I used the [360° Image Gallery](https://aframe.io/examples/showcase/360-image-gallery/) as a starting point because it gave me the option to switch between views. However, it was limited in customising each view according to my requirements.
 
-I then took a look at the [`<a link>`](https://aframe.io/docs/0.8.0/primitives/a-link.html) primitive which makes it possible to link to different HTML documents. That sounded exactly what I wanted: it gave me the option to construct each view way faster and unique to its environment. However, when I came accross this method of linking worlds together, it was 1.5 days before the deadline and the traversing (linking) would have costed me more time than I had.
+I then took a look at the [`<a-link>`](https://aframe.io/docs/0.8.0/primitives/a-link.html) primitive which makes it possible to link to different HTML documents. That sounded exactly what I wanted: it gave me the option to construct each view way faster and unique to its environment. I tried setting this up but soon found out that this method of linking worlds together (traversing) would cost me more time than I had (I had 1.5 days left a this point in time).
 
 ## Shortcut to Completion
 
-I still had to write a big part the code to handle all the data. Thus, I chose to shortcut my way to completion: instead of constructing six different views, I chose to limit it to one. That was a big relief, as constructing one view is much less work than doing six. That gave me time to work on the API handling and data presentation in the respective view.
+I still had to write some code to handle all the data. Thus, I chose to shortcut my way to completion: instead of constructing six different views, I chose to limit it to one. That was a big relief, as constructing one view is much less work than doing six. That gave me time to work on the API handling and data presentation in the respective view.
 
 # What did I learn?
 
@@ -79,13 +79,11 @@ Because of the fact that I'm making a request to the API through the client, the
 
 There are two ways to solve this problem:
 
-```
-1. Install this [Google Chrome Plugin](https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc?hl=en) and turn it on.
+* Install this [Google Chrome Plugin](https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc?hl=en) and turn it on.
 
-2. Or setting up a proxy server by using [this package](https://github.com/Rob--W/cors-anywhere). 
+* Or setting up a proxy server by using [this package](https://github.com/Rob--W/cors-anywhere). 
 
 I chose to do the first one, as it's taking me only 1 second to solve the problem. That doesn't mean it's the right way to solve it.
-```
 
 3. Run the server
 
