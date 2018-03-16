@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Amsterdam VR</title>
+    <meta name="description" content="Amsterdam VR">
+    <script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
+    <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="cs" crossorigin="anonymous" src="assets/images/pano-cs.png">
+      </a-assets>
+
+      <a-sky rotation="-6 40 -8" radius="10" src="#cs"></a-sky>
+      <a-plane color="#CCC" position="0 -7.7 1.3" height="16" width="14" rotation="-90 0 0"></a-plane>
+
+      <a-entity>
+        <a-entity text-geometry="size: 0.3; value: Look down" material="color: #F5F5F5;" position="-0.9 -3.3 -5" rotation="-30 -1 0"></a-entity>
+        <a-plane color="#F5F5F5" position="0.05 -3.2 -4" rotation="-30 -1 0" width="0.04" height="0.40"></a-plane>
+        <a-plane color="#F5F5F5" position="0.01 -3.22 -3.8" rotation="-30 -1 30" width="0.04" height="0.15"></a-plane>
+        <a-plane color="#F5F5F5" position="0.09 -3.35 -4" rotation="-30 -1 -30" width="0.04" height="0.15"></a-plane>
+        <a-animation attribute="position" to="0 0.5 -0.5" direction="alternate" dur="1500" repeat="indefinite"></a-animation>
+      </a-entity>
+
+      <a-entity text-geometry="size: 0.6; value: Well, hello there!" material="color: #FF8A65;" position="-3 -7.5 -3.8" rotation="-90 0 0"></a-entity>
+      <a-entity text-geometry="size: 0.4; value: You are looking at Amsterdam Central" material="color: #424242;"  position="-4.7 -7.5 -2.4" rotation="-90 0 0"></a-entity>
+      <a-entity text-geometry="size: 0.4; value: Station. One of the busiest public transport" material="color: #424242;" size="0.35" position="-5.12 -7.5 -1.5" rotation="-90 0 0"></a-entity>
+      <a-entity text-geometry="size: 0.4; value: hubs in the Netherlands." material="color: #424242;" size="0.35" position="-5.2 -7.5 -0.6" rotation="-90 0 0"></a-entity>
+      <a-entity text-geometry="size: 0.4; value: Look to your sides or behind you and see" material="color: #424242;" size="0.35" position="-5.4 -7.5 0.9" rotation="-90 0 0"></a-entity>
+      <a-entity text-geometry="size: 0.4; value: how Amsterdam Central Station changed" material="color: #424242;" size="0.35" position="-5.25 -7.5 1.8" rotation="-90 0 0"></a-entity>
+      <a-entity text-geometry="size: 0.4; value: over time." material="color: #424242;" size="0.35" position="-5.2 -7.5 2.7" rotation="-90 0 0"></a-entity>
+      <a-entity text-geometry="size: 0.4; value: Have fun!" material="color: #424242;" size="0.35" position="-0.2 -7.5 3.5" rotation="-90 0 0"></a-entity>
+
+      <a-entity id="pane0" layout="type: box; columns: 4; margin: 2;" position="7.4 -3.3 -1" rotation="0 -100 0"></a-entity>
+      <a-entity id="pane1" layout="type: box; columns: 4; margin: 2;" position="3.70 -3.3 7.5" rotation="0 -180 0"></a-entity>
+      <a-entity id="pane2" layout="type: box; columns: 4; margin: 2;" position="-6 -3.3 5.7" rotation="0 100 0"></a-entity>
+
+      <a-entity camera look-controls wasd-controls>
+        <a-cursor></a-cursor>
+      </a-entity>
+    </a-scene>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
