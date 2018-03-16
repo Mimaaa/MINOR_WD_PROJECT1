@@ -99,6 +99,6 @@ Open Google Chrome and visit `http://localhost:8080/`
 
 ### The Glitch issue
 
-Glitch is not allowing me to receive the pictures through their project because the images are server with HTTP instead of HTTPS. I would advise the owners of that database to change this as soon as possible.
+Glitch is not allowing me to receive the pictures through their project because the images are served with HTTP instead of HTTPS. I would advise the owners of that database to change this as soon as possible.
 
 
