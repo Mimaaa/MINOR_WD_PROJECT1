@@ -1,0 +1,20 @@
+{
+  "name": "minor_wd_project1",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A VR experience through history: how tourist destinations changed.",
+  "license": "MIT",
+  "repository": "mimaaa/minor_wd_project1",
+  "author": "Mirza van Meerwijk <hello@mirza.lol> (http://mirza.lol)",
+  "scripts": {
+    "start": "sudo npm install -g live-server && live-server"
+  },
+  "main": "assets/js/app.js",
+  "keywords": [
+    "oba",
+    "vr",
+    "cmda",
+    "adamlink",
+    "sparql"
+  ]
+}
