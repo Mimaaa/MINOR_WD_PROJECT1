@@ -104,4 +104,4 @@ Glitch is not allowing me to receive the pictures through their project because 
 
 # Final thanks
 
-I want to thank [Merlijn Vos](@murderlon) for helping me with thinking about how to distribute the data to their respective panes.
+I want to thank [Merlijn Vos](https://github.com/murderlon) for helping me with thinking about how to distribute the data to their respective panes.
